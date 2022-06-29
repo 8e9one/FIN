@@ -1,0 +1,108 @@
+main {
+    transform: translateY(100px);
+
+    p {
+        color: $primary-color;
+    }
+}
+
+.product-cards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    max-width: 1000px;
+    margin-left: 25%;
+    margin-right: 25%;
+
+    &__container-product {
+        position: relative;
+        min-width: 720px;
+    }
+
+    &__product {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__product>*:nth-child(1) {
+        // flex: 1 1 25%;
+        min-width: 10.3125em;
+    }
+
+    &__product>*:nth-child(2) {
+        flex: 1 1 50%;
+    }
+
+    &__product>*:nth-child(3) {
+        flex: 1 1 25%;
+
+    }
+
+    &__afbeelding-product {
+        height: $image-height;
+        width: $image-width;
+    }
+
+    &__product-beschrijving {
+        margin: 0 2.5em;
+        padding: 2.5em 0;
+    }
+
+    &__winkel-wagen {
+        display: flex;
+        flex-direction: column;
+        padding: 2.5em 0;
+    }
+
+    &__winkel-wagen span,
+    &__winkel-wagen div {
+        margin: 0.3125em;
+    }
+
+    &__est-bezorg-tijd {
+        color: $quaternary-color;
+    }
+
+    &__prijs {
+        color: $quinary-color;
+        font-weight: 1000;
+    }
+
+    &__cent {
+        font-size: 70%;
+        vertical-align: baseline;
+        position: relative;
+        top: -0.20rem;
+        right: 0.4rem;
+    }
+
+    &__container-pagination {
+        display: flex;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        max-width: 700px;
+    }
+
+    &__page {
+        color: $primary-color;
+        padding: 1rem 2rem;
+        margin: 2rem 0 1rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.active {
+            border: 1px solid $tertiary-color;
+            padding: 1rem 2 rem;
+            margin: 2rem 0 1rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

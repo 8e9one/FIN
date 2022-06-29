@@ -1,0 +1,54 @@
+.navigation {
+    &__menu-bar {
+        display: flex
+    }
+
+    & li {
+        list-style-type: none;
+        font-size: 30px;
+        overflow: hidden;
+
+        i,
+        a {
+            color: $secondary-color;
+            list-style: none;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    }
+}
+
+
+.info-winkels {
+    &__wil-je-ons-volgen i {
+        color: $primary-color;
+        font-size: 30px;
+        margin: 0 5px;
+
+        &:hover {
+            color: $tertiary-color;
+        }
+    }
+
+    & h3,
+    ul {
+        margin: 0 6.25rem 0 0;
+        padding: 0;
+
+        li {
+            list-style-position: outside;
+            padding: 0;
+            list-style: none;
+            color: $primary-color;
+        }
+    }
+
+    & li a {
+        text-decoration: none;
+        color: $primary-color;
+
+        &:hover {
+            color: $tertiary-color;
+        }
+    }
+}
